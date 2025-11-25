@@ -1,0 +1,66 @@
+(function() { // Start of IIFE
+ /****************************
+ *  Mobile subnav menu
+ ***************************/
+$(document).ready(function(){
+    $(".drop-btn").click(function(){
+        $(".mobile-dropdown-menu").slideToggle();
+    });
+});
+let dropdown = document.getElementsByClassName("dropdown-btn");
+for (let i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+    } 
+    else {
+        dropdownContent.style.display = "block";
+    }
+  });
+}
+$(document).ready(function(){
+    $(".mobile-menu").click(function(){
+        $("#in-this-section").slideToggle();
+    });
+});
+/****************************
+ *  Video header buttons
+ ***************************/
+let vid = document.getElementById("vid_"); 
+function playVid() { 
+  vid.play(); 
+} 
+function pauseVid() { 
+  vid.pause(); 
+} 
+/****************************
+ *  Read more
+ ***************************/
+$(document).ready(function() {
+    $(".readmore-link").click( function(e) {
+        let isExpanded =  $(e.target).hasClass("expand");
+        $(".readmore.expand").removeClass("expand");
+        $(".readmore-link.expand").removeClass("expand");
+        if (!isExpanded){
+            $( e.target ).parent( ".readmore" ).addClass( "expand" );
+            $(e.target).addClass("expand");  
+        } 
+    });
+});
+
+/****************************
+ *  Footer auto update date
+ ***************************/
+var currentYear = (new Date).getFullYear();$(document).ready(function() {$("#year").text((new Date).getFullYear());});
+
+/****************************
+ *  Left nav menu
+ ***************************/
+$(document).ready(function() {
+    $(".accordion-toggle").click(function() {
+        $(this).toggleClass('active');
+    });
+});
+})(); // End of IIFE

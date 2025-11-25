@@ -1,0 +1,109 @@
+
+
+<link href="https://www.umsl.edu/facplan/files/rlstyles.css" rel="stylesheet" />
+<script src="https://www.umsl.edu/facplan/files/pagination.js"></script>
+<script>//
+function toggleAccordion(id) {
+  // Hide all accordion-content sections
+  document.querySelectorAll('.accordion-content').forEach(content => {
+    if (content.id !== id) {
+      content.classList.remove("active"); // Hide all other tables
+      content.style.display = "none";
+    }
+  });
+
+  // Toggle the clicked accordion content
+  const content = document.getElementById(id);
+  if (content) {
+    if (content.classList.contains("active")) {
+      content.classList.remove("active");
+      content.style.display = "none";
+    } else {
+      content.classList.add("active");
+      content.style.display = "block";
+    }
+  }
+}
+</script>
+<div class="col-md-12 columns-container">
+    <div class="accordion-container">
+        <!-- Accordion Item 1 -->
+        <div class="accordion">
+            <h3 class="accordion-title" onclick="toggleAccordion('a')">MU Extension: Master Gardener</h3>
+            <div id ='a' class="accordion-content">
+                <a class = 'btn-btn-primary' href ='https://extension.missouri.edu/programs/soil-and-plant-testing-laboratory'>Have a Soil or Plant Issue?</a>
+                <h5>Get your soil or plant tested at the MU Extension Laboratory</h5>
+                <p>"The laboratory, sponsored by MU Extension, provides soil testing, fertilizer recommendations and plant analysis services to farmers, homeowners, vegetable and fruit growers, golf course superintendents and lawn and landscape specialists."
+        </p>
+                <p style="text-align: center;">
+                    <span>
+                        <a class="btn btn-primary" href="https://extension.missouri.edu/search?https%3A%2F%2Fmaster-7rqtwti-bfxilqw332adu_us-3_platformsh_site%2Fsearch=&s=&sort_by=title&sort_order=ASC&f%5B0%5D=programs%3A67684&f%5B1%5D=tags%3A91825">
+                            Forms for samples</a>
+                    </span>&nbsp;
+
+          
+                    <a class="btn btn-primary" href="https://extension.missouri.edu/products-and-services/soil-samples-submitted-directly-to-lab">
+            Pay online for soil testing</a>
+                </p>
+                <h4>Want to become a Master Gardener?</h4>
+                <p>MU Extension offers the Missouri Master Gardener course each semester, where you will gain vital horticulture, tree, gardening, pest management, and other skills. The mission of the Missouri Extension Master Gardener program is helping others learn to grow.</p>
+                <span>Sign up or learn more below!
+        
+                    <h5 class="alert-info">
+                        <strong>
+                            <a class ="btn btn-primary" href="https://extension.missouri.edu/publications/cb19">Missouri Master Gardener Core Manual</a>
+                        </strong>
+                    </h5>
+                </span>
+            </div>
+            <div class="accordion">
+                <h3 class="accordion-title" onclick="toggleAccordion('b')">Missouri Department of Conservation</h3>
+                <div id ='b' class="accordion-content">
+                    <p>The Missouri Department of Conservation (MDC) offers a plethora of resouces including identification field guides, Conservation strategies, native plant selections, and more!</p>
+                    <h4>Missouri Outdoor Recreational Access Program: MRAP</h4>
+                    <p>MDC created the Missouri Outdoor Recreational Access Program (MRAP) to increase outdoor recreational opportunities on private land. Under this program, MDC provides annual incentive payments to private landowners who open their land for public recreational activities such as hunting, fishing, and wildlife viewing.
+            
+                        <a class="alert-info" href="https://mdc.mo.gov/your-property/missouri-outdoor-recreational-access-program-mrap"></a>
+                    </span>
+                </p>
+                <p style="text-align: center;">
+                    <span>
+                        <a class="btn btn-primary" href="https://mdc.mo.gov/trees-plants/native-plants-your-landscape/add-life-your-landscape">
+                           Utilize Plants Recommended by MDC!</a>
+                    </span>&nbsp;
+
+            
+                    <a class="btn btn-primary" href="https://mdc.mo.gov/trees-plants/invasive-plants">
+              Learn Invasive Species!</a>
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
+            <h3  class ='accordion-title' onclick="toggleAccordion('c')">Missouri Prairie Foundation</h3>
+            <div id ='c'  class="accordion-content">
+                <h3>The Missouri Prairie Foundation (MPF) and GrowNative!</h3>
+                <p class="alert-info">
+                    <strong>Grow Native! is the native plant marketing and education program of the&nbsp;
+              
+                        <a href="https://moprairie.org/" rel="noopener noreferrer" target="_blank">Missouri Prairie Foundation</a>. Together, these wonderful organizations along with the Green Team 'help&nbsp;
+              
+                        <span>protect and restore biodiversity by increasing conservation awareness of native plants and their effective use in urban, suburban, and rural developed landscapes.'</span>
+                    </strong>
+                </p>
+                <p>
+                    <iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ap1hzgPi8w8" width="560"></iframe>
+                </p>
+                <p class="alert-info">
+                    <strong>"The Missouri Prairie Foundation is a private, nonprofit, 501(c)(3) land trust governed by a volunteer board of directors. A staff of five carries out daily operations of the organization and several technical advisors provide valuable technical assistance. Numerous, valued volunteers assist with prairie management and outreach activities."</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Accordion Item 3 -->
+    <div class="accordion">
+        <h3 onclick="toggleAccordion('d')" class ='accordion-title'>Missouri Botanical Garden</h3>
+        <div id ='d' class="accordion-content">
+            <p>Test</p>
+        </div>
+    </div>
+</div>undefinedundefined</div>
